@@ -1,25 +1,35 @@
 {
-  "name": "vscode-maple",
-  "displayName": "vscode-maple",
-  "description": "Syntax-highlighting for Maple",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.95.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "maple",
-      "aliases": ["Maple", "maple"],
-      "extensions": [".maple"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "maple",
-      "scopeName": "source.maple",
-      "path": "./syntaxes/maple.tmLanguage.json"
-    }]
-  }
+	"name": "vscode-maple",
+	"displayName": "vscode-maple",
+	"description": "Syntax-highlighting for Maple",
+	"repository": "https://github.com/emmathemartian/vscode-maple",
+	"version": "1.1.0",
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "maple",
+				"aliases": [
+					"Maple",
+					"maple"
+				],
+				"extensions": [
+					".maple"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "maple",
+				"scopeName": "source.maple",
+				"path": "./syntaxes/maple.tmLanguage.json"
+			}
+		]
+	}
 }

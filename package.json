@@ -1,6 +1,7 @@
 {
 	"name": "vscode-maple",
 	"displayName": "vscode-maple",
+	"publisher": "EmmaTheMartian",
 	"description": "Syntax-highlighting for Maple",
 	"repository": "https://github.com/emmathemartian/vscode-maple",
 	"version": "1.1.0",

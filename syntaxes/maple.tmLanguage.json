@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Maple",
+	"patterns": [
+		{ "include": "#identifiers" },
+		{ "include": "#strings" },
+		{ "include": "#numbers" }
+	],
+	"repository": {
+		"identifiers": {
+			"name": "variable",
+			"match": "[a-zA-Z0-0-_:.]+"
+		},
+		"strings": {
+			"name": "string.quoted.single.maple",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.maple",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric",
+			"match": "\\d+(.(\\d+))?"
+		}
+	},
+	"scopeName": "source.maple"
+}

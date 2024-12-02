@@ -4,7 +4,8 @@
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#identifiers" },
-		{ "include": "#strings" },
+		{ "include": "#doubleQuotedStrings" },
+		{ "include": "#singleQuotedStrings" },
 		{ "include": "#numbers" }
 	],
 	"repository": {
@@ -17,13 +18,24 @@
 			"name": "variable",
 			"match": "[a-zA-Z0-0-_:.]+"
 		},
-		"strings": {
-			"name": "string.quoted.single.maple",
+		"doubleQuotedStrings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
+		"singleQuotedStrings": {
+			"name": "string.quoted.single",
 			"begin": "'",
 			"end": "'",
 			"patterns": [
 				{
-					"name": "constant.character.escape.maple",
+					"name": "constant.character.escape",
 					"match": "\\\\."
 				}
 			]
